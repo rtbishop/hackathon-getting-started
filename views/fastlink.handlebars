@@ -1,0 +1,28 @@
+<div id="container-fastlink" class="col-8"></div>
+
+<script>
+(function (window) {
+	window.fastlink.open({
+		fastLinkURL: '{{ fastLinkURL }}',
+		jwtToken: 'Bearer {{ jwtToken }}',
+		callback: 'http://localhost:3000/callback',
+		params: {},
+		containerClass: 'iframeCSS',
+		onSuccess: function (data) {
+			console.log(data);
+		},
+		onError: function (data) {
+			console.log(data);
+		},
+		onExit: function (data) {
+			console.log(data);
+			window.fastlink.close();
+			window.location.replace('/data');
+		},
+		onEvent: function (data) {
+			console.log(data);
+		}
+	}, 'container-fastlink');
+
+}(window));
+</script>
