@@ -16,7 +16,7 @@
     "https": "^1.0.0",
     "jade": "~1.11.0",
     "jquery.json-viewer": "^1.4.0",
-    "jsonwebtoken": "^8.5.1",
+    "jsonwebtoken": "^9.0.0",
     "jsrsasign": "^8.0.12",
     "morgan": "~1.9.1"
   }
